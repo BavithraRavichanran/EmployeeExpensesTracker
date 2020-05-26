@@ -1,24 +1,24 @@
-<p>user works!</p>{{profileForm.value}}
+<!-- <p>user works!</p>{{profileForm.value}}
 <div class="panel panel-default">
     <div class="panel-heading">Panel Heading</div>
     <div class="panel-body">
-        <form action="" [formGroup]="profileForm">
+        <form  [formGroup]="profileForm">
             <div class="form-group">
                 <label for="usr">Name:</label>
-                <input type="text" class="form-control" name="name" formControlName="name" requiredid="usr">
+                <input type="text" class="form-control" name="name" formControlName="name" required id="user">
             </div>
             <div class="form-group">
                 <label for="pwd">Email:</label>
                 <input type="email" class="form-control" name="email" formControlName="email" required id="email">
             </div>
 
-            <!-- <div class="form-group">
+            <div class="form-group">
             <label for="pwd">Password:</label>
             <input type="password" class="form-control" id="pwd">
-        </div> -->
+        </div>
             <div class="form-group">
                 <label for="sel1">Department:</label>
-                <select class="form-control" name="department" formControlName="department" required id="sel1">
+                <select class="form-control" name="department" formControlName="department" required>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -27,7 +27,7 @@
             </div>
             <div class="form-group">
                 <label for="sel1">Role:</label>
-                <select class="form-control" name="role" formControlName="role" required id="sel1">
+                <select class="form-control" name="role" formControlName="role" required>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -36,5 +36,6 @@
             </div>
             <button type="button" class="btn btn-success" (click)="submit()">Success</button>
         </form>
+        {{profileForm.value| json}}
     </div>
-</div>
+</div> -->
