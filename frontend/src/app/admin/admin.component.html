@@ -1,6 +1,14 @@
-<p>admin works!</p>
-<div class="p-grid p-dir-col">
-    <div class="p-col">Menu</div>
-    <!-- <div class="p-col">2</div>
-    <div class="p-col">3</div> -->
-</div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- <div class="navbar-header">
+            <a class="navbar-brand" href="#">WebSiteName</a>
+        </div> -->
+        <ul class="nav navbar-nav">
+            <li class="active"><a class="nav-link" routerLinkActive="active" routerLink="/admin/user">USER</a></li>
+            <li><a href="#">DEPARTMENT</a></li>
+            <li><a class="nav-link" routerLinkActive="active" routerLink="/admin/category">CATEGORY</a></li>
+            <!-- <li><a href="#">Page 3</a></li> -->
+        </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>
